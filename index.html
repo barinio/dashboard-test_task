@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard-Test_task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-navigation">
+        <div class="logo-container">
+          <a class="logo-link">
+            <svg class="icon-logo" width="37" height="37">
+              <use href="./img/icons.svg#icon-logo"></use>
+            </svg>
+            Dashboard </a
+          ><span class="logo-version">v.01</span>
+        </div>
+        <nav>
+          <a href="" class="nav-item-link main-page">
+            <div class="nav-link-info">
+              <svg class="icon key-square" width="24" height="24">
+                <use href="./img/icons.svg#icon-key-square"></use>
+              </svg>
+              <p>Dashboard</p>
+            </div>
+          </a>
+          <ul class="nav-list">
+            <li>
+              <a href="" class="nav-item-link">
+                <div class="nav-link-info">
+                  <svg class="icon d-square" width="24" height="24">
+                    <use href="./img/icons.svg#icon-d-square"></use>
+                  </svg>
+                  <p>Product</p>
+                </div>
+                <button type="button">
+                  <svg class="icon btn-right" width="16" height="16">
+                    <use href="./img/icons.svg#icon-btn-right"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="" class="nav-item-link">
+                <div class="nav-link-info">
+                  <svg class="icon user-square" width="24" height="24">
+                    <use href="./img/icons.svg#icon-user-square"></use>
+                  </svg>
+                  <p>Customers</p>
+                </div>
+                <button type="button">
+                  <svg class="icon btn-right" width="16" height="16">
+                    <use href="./img/icons.svg#icon-btn-right"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="" class="nav-item-link">
+                <div class="nav-link-info">
+                  <svg class="icon wallet-money" width="24" height="24">
+                    <use href="./img/icons.svg#icon-wallet-money"></use>
+                  </svg>
+                  <p>Income</p>
+                </div>
+                <button type="button">
+                  <svg class="icon btn-right" width="16" height="16">
+                    <use href="./img/icons.svg#icon-btn-right"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="" class="nav-item-link">
+                <div class="nav-link-info">
+                  <svg class="icon discount-shape" width="24" height="24">
+                    <use href="./img/icons.svg#icon-discount-shape"></use>
+                  </svg>
+                  <p>Promote</p>
+                </div>
+                <button type="button">
+                  <svg class="icon btn-right" width="16" height="16">
+                    <use href="./img/icons.svg#icon-btn-right"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="" class="nav-item-link">
+                <div class="nav-link-info">
+                  <svg class="icon message-question" width="24" height="24">
+                    <use href="./img/icons.svg#icon-message-question"></use>
+                  </svg>
+                  <p>Help</p>
+                </div>
+                <button type="button">
+                  <svg class="icon btn-right" width="16" height="16">
+                    <use href="./img/icons.svg#icon-btn-right"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="user-container">
+        <img src="./img/user.png" alt="user" />
+        <div class="user-info">
+          <p class="user-name">Evano</p>
+          <p class="user-role">Project Manager</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Hello Evano 👋🏼,</h1>
+      <section class="page-content">
+        <div class="customers-container">
+          <div class="customers-info">
+            <h2>All Customers</h2>
+            <p>Active Members</p>
+          </div>
+          <div>
+            <label class="input-search"
+              ><svg class="icon-search" width="24" height="24">
+                <use href="./img/icons.svg#icon-search"></use>
+              </svg>
+              <input type="text" placeholder="Search"
+            /></label>
+          </div>
+        </div>
+
+        <table class="customers-table only-desk">
+          <tbody class="table-body">
+            <tr class="table-head">
+              <th>Customer Name</th>
+              <th>Company</th>
+              <th>Phone Number</th>
+              <th>Email</th>
+              <th>Country</th>
+              <th>Status</th>
+            </tr>
+
+            <tr>
+              <td>Jane Cooper</td>
+              <td>Microsoft</td>
+              <td>(225) 555-0118</td>
+              <td>jane@microsoft.com</td>
+              <td>United States</td>
+              <td class="table-button">
+                <button type="button" class="btn-status active">Active</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Floyd Miles</td>
+              <td>Yahoo</td>
+              <td>(205) 555-0100</td>
+              <td>floyd@yahoo.com</td>
+              <td>Kiribati</td>
+              <td class="table-button">
+                <button type="button" class="btn-status inactive">
+                  Inactive
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Ronald Richards</td>
+              <td>Adobe</td>
+              <td>(302) 555-0107</td>
+              <td>ronald@adobe.com</td>
+              <td>Israel</td>
+              <td class="table-button">
+                <button type="button" class="btn-status inactive">
+                  Inactive
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Marvin McKinney</td>
+              <td>Tesla</td>
+              <td>(252) 555-0126</td>
+              <td>marvin@tesla.com</td>
+              <td>Iran</td>
+              <td class="table-button">
+                <button type="button" class="btn-status active">Active</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Jerome Bell</td>
+              <td>Google</td>
+              <td>(629) 555-0129</td>
+              <td>jerome@google.com</td>
+              <td>Réunion</td>
+              <td class="table-button">
+                <button type="button" class="btn-status active">Active</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Kathryn Murphy</td>
+              <td>Microsoft</td>
+              <td>(406) 555-0120</td>
+              <td>kathryn@microsoft.com</td>
+              <td>Curaçao</td>
+              <td class="table-button">
+                <button type="button" class="btn-status active">Active</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Jacob Jones</td>
+              <td>Yahoo</td>
+              <td>(208) 555-0112</td>
+              <td>jacob@yahoo.com</td>
+              <td>Brazil</td>
+              <td class="table-button">
+                <button type="button" class="btn-status active">Active</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Kristin Watson</td>
+              <td>Facebook</td>
+              <td>(704) 555-0127</td>
+              <td>kristin@facebook.com</td>
+              <td>Åland Islands</td>
+              <td class="table-button">
+                <button type="button" class="btn-status inactive">
+                  Inactive
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="customers-table only-mobile">
+          <tbody class="table-body">
+            <tr class="table-head">
+              <th>Customer Name</th>
+              <th>Company</th>
+              <th>Country</th>
+              <th>Status</th>
+            </tr>
+
+            <tr>
+              <td>Jane Cooper</td>
+              <td>Microsoft</td>
+              <td>United States</td>
+              <td class="table-button">
+                <button type="button" class="btn-status active">Active</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Floyd Miles</td>
+              <td>Yahoo</td>
+              <td>Kiribati</td>
+              <td class="table-button">
+                <button type="button" class="btn-status inactive">
+                  Inactive
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Ronald Richards</td>
+              <td>Adobe</td>
+              <td>Israel</td>
+              <td class="table-button">
+                <button type="button" class="btn-status inactive">
+                  Inactive
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Marvin McKinney</td>
+              <td>Tesla</td>
+              <td>Iran</td>
+              <td class="table-button">
+                <button type="button" class="btn-status active">Active</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Jerome Bell</td>
+              <td>Google</td>
+              <td>Réunion</td>
+              <td class="table-button">
+                <button type="button" class="btn-status active">Active</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Kathryn Murphy</td>
+              <td>Microsoft</td>
+              <td>Curaçao</td>
+              <td class="table-button">
+                <button type="button" class="btn-status active">Active</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Jacob Jones</td>
+              <td>Yahoo</td>
+              <td>Brazil</td>
+              <td class="table-button">
+                <button type="button" class="btn-status active">Active</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Kristin Watson</td>
+              <td>Facebook</td>
+              <td>Åland Islands</td>
+              <td class="table-button">
+                <button type="button" class="btn-status inactive">
+                  Inactive
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="counter-container">
+          <p class="counter-info">Showing data 1 to 8 of 256K entries</p>
+          <div class="pagination">
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <svg class="icon-switch" width="8" height="12">
+                  <use href="./img/icons.svg#icon-left"></use>
+                </svg>
+              </li>
+              <li class="pagination-item">1</li>
+              <li class="pagination-item">2</li>
+              <li class="pagination-item">3</li>
+              <li class="pagination-item">4</li>
+              <li class="item-more">...</li>
+              <li class="pagination-item">40</li>
+              <li class="pagination-item">
+                <svg class="icon-switch" width="8" height="12">
+                  <use href="./img/icons.svg#icon-right"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
